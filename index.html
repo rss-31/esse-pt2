@@ -1,2 +1,92 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+ <head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Gelatto – Sorvetes para lojas, festas e casa</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bagel+Fat+One&family=Nunito:wght@400;600;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header><nav>
+<a class="logo" href="#topo">Gelatto</a>
+<ul><li><a href="#sabores">Sabores</a></li><li><a href="#tamanhos">Tamanhos</a></li><li><a href="#pedido">Pedido</a></li><li><a href="#contato">Contato</a></li></ul>
+<a class="btn" href="#pedido">Fazer pedido</a>
+</nav></header>
+
+<main id="topo">
+<div class="wrap hero">
+<div>
+<h1>Sorvete artesanal para sua loja, sua festa e sua geladeira.</h1>
+<p>A Gelatto fornece sorvetes cremosos em potes, baldes e picolés, com entrega programada e pedido mínimo baixo.</p>
+<div class="cta"><a class="btn" href="#pedido">Montar meu pedido</a><a class="btn alt" href="#sabores">Ver sabores</a></div>
+</div>
+<div class="cone" role="img" aria-label="Casquinha com três bolas de sorvete">
+<div class="scoop s1"></div><div class="scoop s2"></div><div class="scoop s3"></div><div class="waf"></div>
+</div>
+</div>
+
+<section id="sabores"><div class="wrap">
+<h2>Sabores da casa</h2>
+<p class="sub">Receitas próprias, feitas em pequenos lotes. Misture quantos sabores quiser no mesmo pedido.</p>
+<div class="flavors" id="flavors"></div>
+</div></section>
+
+<section id="tamanhos"><div class="wrap">
+<h2>Tamanhos e preços</h2>
+<p class="sub">Valores de exemplo. Descontos para pedidos acima de 5 unidades.</p>
+<div class="sizes" id="sizes"></div>
+</div></section>
+
+<section id="pedido"><div class="wrap">
+<h2>Faça seu pedido</h2>
+<p class="sub">Escolha os itens, informe seus dados e envie o pedido pelo WhatsApp. Respondemos com a confirmação e o prazo.</p>
+<div class="order">
+<div>
+<label for="f">Sabor</label><select id="f"></select>
+<div class="row"><div><label for="s">Tamanho</label><select id="s"></select></div>
+<div><label for="q">Quantidade</label><input id="q" type="number" min="1" value="1"></div></div>
+<p><button class="btn alt" id="add" type="button">Adicionar ao pedido</button></p>
+<label for="n">Seu nome</label><input id="n" autocomplete="name">
+<label for="t">Como receber</label>
+<select id="t"><option>Entrega no endereço</option><option>Retirada na fábrica</option></select>
+<label for="a">Endereço e observações</label><textarea id="a" rows="3"></textarea>
+</div>
+<div>
+<h3 style="font-size:1.5rem;margin-bottom:10px">Seu pedido</h3>
+<ul class="list" id="list"></ul>
+<div class="total" id="total"></div>
+<a class="btn" id="send" href="#pedido" target="_blank" rel="noopener">Enviar pelo WhatsApp</a>
+<p class="empty" id="msg" role="status"></p>
+</div>
+</div>
+</div></section>
+
+<section><div class="wrap">
+<h2>Como funciona</h2>
+<p class="sub">Do pedido ao freezer em três passos.</p>
+<ol class="how">
+<li><b>Escolha</b><br>Monte o pedido com os sabores e tamanhos que precisar.</li>
+<li><b>Confirme</b><br>Enviamos o valor final e a data de entrega pelo WhatsApp.</li>
+<li><b>Receba</b><br>Entregamos em caixa térmica, ou você retira na fábrica.</li>
+</ol>
+</div></section>
+
+<section id="contato"><div class="wrap">
+<h2>Outras formas de pedir</h2>
+<p class="sub">Use o canal que for mais prático. Troque os dados de exemplo pelos reais da Gelatto.</p>
+<div class="channels">
+<a class="ch" href="https://wa.me/5541999999999"><b>WhatsApp</b><span>(41) 99999-9999</span></a>
+<a class="ch" href="tel:+5541999999999"><b>Telefone</b><span>Seg a sáb, 8h às 18h</span></a>
+<a class="ch" href="mailto:pedidos@gelatto.com.br"><b>E-mail</b><span>pedidos@gelatto.com.br</span></a>
+<a class="ch" href="https://instagram.com/gelatto"><b>Instagram</b><span>@gelatto, mande uma mensagem direta</span></a>
+</div>
+</div></section>
+</main>
+
+<footer>© 2026 Gelatto Sorvetes. Todos os direitos reservados.</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
